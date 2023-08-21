@@ -8,7 +8,7 @@ import { filter } from 'rxjs/operators';
 //emit every second
 const srcInterval$ = interval(1000);
 //filter out all values until interval is greater than 5
-const example = srcInterval$.pipe(filter((num) => num > 5 && num < 50));
+const example = srcInterval$.pipe(filter((num) => num > 5 && num < 21));
 
 const subscribe = example.subscribe((val) =>
   console.log(`Number greater than 5: ${val}`)
